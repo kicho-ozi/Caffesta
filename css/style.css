@@ -1,0 +1,232 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  height: vw;
+  margin: 0;
+}
+
+button {
+  font: 0.9vw "Open Sans", sans-serif;
+  text-transform: uppercase;
+  background-color: #EF0031;
+  border: none;
+  padding: 0.7vw 2.5vw;
+  color: white;
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 15vw;
+  box-sizing: border-box;
+  color: white;
+  z-index: 1;
+}
+.menu a {
+  font-size: 0.7vw;
+  margin: 0 0.8vw;
+}
+.menu img {
+  width: 6vw;
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  height: 100vh;
+  background-image: url(../img/banner.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner button {
+  font-size: 1vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+.banner .banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner .banner-content .banner-title {
+  font-family: "Inter", sans-serif;
+  font-size: 5vw;
+  text-transform: uppercase;
+  margin: 3vw 0px;
+  color: white;
+}
+.banner .banner-content .banner-text {
+  font-size: 1vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+.about-us {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+.about-us .about-us-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: relative;
+  padding: 0 20%;
+}
+.about-us .images {
+  position: relative;
+  margin-right: 5vw;
+}
+.about-us .front-image {
+  position: relative;
+  z-index: 2;
+  width: 20vw;
+  left: 6%;
+}
+.about-us .back-image {
+  position: absolute;
+  bottom: 6%;
+  left: 0px;
+  z-index: 1;
+  width: 100%;
+}
+.about-us .title {
+  font-family: "Inter", sans-serif;
+  font-size: 2.5vw;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  margin: 4vw 0px;
+  color: #333333;
+}
+.about-us .content {
+  position: relative;
+  font-size: 1vw;
+  z-index: 2;
+  margin: 0;
+}
+
+.best-positions {
+  background-image: url(../img/banner-positions.jpg);
+  padding: 40px;
+}
+.best-positions .title {
+  font-family: "Inter", sans-serif;
+  font-size: 2.5vw;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  margin: 4vw 0px;
+  color: white;
+}
+.best-positions .cards {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4vw;
+}
+.best-positions .cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: #ADADAD 1px solid;
+  margin: 0 2vw;
+  padding: 1vw 0;
+}
+.best-positions .cards .card img {
+  width: 90%;
+}
+.best-positions .cards .card .card-title {
+  color: white;
+  font-size: 1vw;
+  margin: 0px;
+}
+.best-positions .cards .card .card-cost {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5vw;
+  margin: 0px;
+}
+.best-positions .cards .card .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3vh 0px;
+}
+
+.order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20vw;
+}
+.order .title {
+  font-family: "Inter", sans-serif;
+  font-size: 2.5vw;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  margin: 4vw 0px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: black;
+}
+.order form {
+  width: 100%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "A A C" "B B D";
+}
+.order [class^=form-] {
+  display: grid;
+  height: 3vw;
+  padding: 0.5vw 1.5vw;
+  color: #848484;
+  font-size: 1.3vw;
+  font-weight: bolder;
+}
+.order .form-name {
+  grid-area: A;
+}
+.order .form-adress {
+  grid-area: B;
+}
+.order .form-date {
+  grid-area: C;
+}
+.order .form-phone {
+  grid-area: D;
+}
+.order button {
+  margin: 6vh;
+}
+
+@media (max-width: 1000px) {
+  .banner {
+    height: 80vh;
+  }
+  .about-us .about-us-content {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 500px) {
+  .banner {
+    height: 60vh;
+  }
+  .about-us .about-us-content {
+    padding: 0 50px;
+  }
+}/*# sourceMappingURL=style.css.map */

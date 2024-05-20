@@ -1,0 +1,41 @@
+@mixin accent-text
+{
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $light;
+}
+@mixin main-banner-text
+{
+    font-family: $inter-font;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin: 3vw 0px;
+    color: $light;
+}
+@mixin title
+{
+    font-family: $inter-font;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    margin: 1em 0px;
+}
+@mixin card-title 
+{
+    color: $light;
+    font-size: $card-title;
+}
+@mixin card-cost 
+{
+    color: $light;
+    font-weight: bold;
+    font-size: $card-cost;
+}
+@mixin form-text
+{
+    color: $form-text-color;
+    font-size: $form-text-size;
+    font-weight: bolder;
+}

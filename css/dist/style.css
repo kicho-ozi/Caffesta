@@ -1,74 +1,17 @@
 body {
   font-family: "Open Sans", sans-serif;
-  height: vw;
   margin: 0;
+  font-size: 16px;
 }
 
 button {
-  font: 0.9vw "Open Sans", sans-serif;
+  font: 0.7rem "Open Sans", sans-serif;
   text-transform: uppercase;
   background-color: #EF0031;
   border: none;
-  padding: 0.7vw 2.5vw;
+  padding: 0.7rem 2.5rem;
   color: white;
   cursor: pointer;
-}
-
-.menu {
-  position: absolute;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-transform: uppercase;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 25px 15vw;
-  box-sizing: border-box;
-  color: white;
-  z-index: 1;
-}
-.menu a {
-  font-size: 0.7vw;
-  margin: 0 0.8vw;
-}
-.menu img {
-  width: 6vw;
-}
-
-.banner {
-  background-size: cover;
-  background-position: center;
-  z-index: 0;
-  height: 100vh;
-  background-image: url(../img/banner.jpg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.banner button {
-  font-size: 1vw;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: white;
-}
-.banner .banner-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.banner .banner-content .banner-title {
-  font-family: "Inter", sans-serif;
-  font-size: 5vw;
-  text-transform: uppercase;
-  margin: 3vw 0px;
-  color: white;
-}
-.banner .banner-content .banner-text {
-  font-size: 1vw;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: white;
 }
 
 .about-us {
@@ -116,6 +59,16 @@ button {
   margin: 0;
 }
 
+@media (max-width: 1000px) {
+  .about-us .about-us-content {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 500px) {
+  .about-us .about-us-content {
+    padding: 0 50px;
+  }
+}
 .best-positions {
   background-image: url(../img/banner-positions.jpg);
   padding: 40px;
@@ -165,6 +118,77 @@ button {
   margin: 3vh 0px;
 }
 
+.menu {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 15vw;
+  box-sizing: border-box;
+  color: white;
+  z-index: 1;
+}
+.menu a {
+  font-size: 0.7rem;
+  margin: 0 0.8vw;
+}
+.menu img {
+  width: 6vw;
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  height: 100vh;
+  background-image: url(../img/banner.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner button {
+  font-size: 1vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+.banner .banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner .banner-content .banner-title {
+  font-family: "Inter", sans-serif;
+  font-size: 5vw;
+  text-transform: uppercase;
+  margin: 3vw 0px;
+  color: white;
+}
+.banner .banner-content .banner-text {
+  font-size: 1vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+@media (max-width: 920px) {
+  .banner {
+    height: 80vh;
+  }
+
+  .menu a {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .banner {
+    height: 60vh;
+  }
+}
 .order {
   display: flex;
   flex-direction: column;
@@ -214,21 +238,9 @@ button {
   margin: 6vh;
 }
 
-@media (max-width: 1000px) {
-  .banner {
-    height: 80vh;
-  }
-
-  .about-us .about-us-content {
-    padding: 0 100px;
-  }
-}
-@media (max-width: 500px) {
-  .banner {
-    height: 60vh;
-  }
-
-  .about-us .about-us-content {
-    padding: 0 50px;
+@media (max-width: 920px) {
+  button {
+    font: 0.5rem "Open Sans", sans-serif;
+    padding: 0.4em 2.1em;
   }
 }

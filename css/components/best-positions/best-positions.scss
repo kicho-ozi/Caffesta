@@ -1,0 +1,51 @@
+$card-title: 1rem;
+$card-cost: 1.5rem;
+
+.best-positions
+{
+    background-image: url(../img/banner-positions.jpg);
+    padding: 40px;
+    .title
+    {
+        @include title;
+        color: $light;
+    }
+    .cards
+    {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4vw;
+        .card
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.2);
+            border: #ADADAD 1px solid;
+            margin: 0 2vw;
+            padding: 1vw 0;
+            img 
+            {
+                width: 90%;
+            }
+            .card-title
+            {
+                @include card-title;
+                margin: 0px;
+            }
+            .card-cost
+            {
+                @include card-cost;
+                margin: 0px;
+            }
+            .card-content
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 3vh 0px;
+            }
+        }
+    }
+}

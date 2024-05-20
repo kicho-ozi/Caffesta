@@ -1,0 +1,26 @@
+$inter-font: "Inter", sans-serif;
+$open-sans-font: "Open Sans", sans-serif;
+
+$light: white;
+$dark: black;
+$button-back: #EF0031;
+$title-color: #333333;
+$form-text-color: #848484;
+
+body
+{
+    font-family: $open-sans-font;
+    margin: 0;
+    font-size: 16px;
+}
+
+button
+{
+    font: 0.8rem $open-sans-font;
+    text-transform: uppercase;
+    background-color: $button-back;
+    border: none;
+    padding: 0.7em 2.5em;
+    color: $light;
+    cursor: pointer;
+}

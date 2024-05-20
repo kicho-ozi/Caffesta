@@ -1,0 +1,54 @@
+$form-text-size: 1.3rem;
+
+.order
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em 20em;
+    .title
+    {
+        @include title;
+        font-family: $open-sans-font;
+        font-weight: 500;
+        color: $dark;
+    }
+    form 
+    {
+        width: 100%;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "A A C"
+        "B B D";
+    }
+    [class^="form-"]
+    {
+        display: grid;
+        height: 3em;
+        padding: 0.1em 1.5em;
+        @include form-text;
+    }
+    .form-name
+    {
+        grid-area: A;
+    }
+    .form-adress
+    {
+        grid-area: B;
+    }
+    .form-date
+    {
+        grid-area: C;
+    }
+    .form-phone
+    {
+        grid-area: D;
+    }
+    button 
+    {
+        margin: 6vh;
+    }
+}

@@ -1,0 +1,38 @@
+$card-title: 1rem;
+$card-cost: 1.5rem;
+
+@media (max-width: 930px)
+{
+    $card-title: 0.7rem;
+    $card-cost: 1.2rem;
+    @mixin card-title 
+    {
+        color: $light;
+        font-size: $card-title;
+    }
+    @mixin card-cost 
+    {
+        color: $light;
+        font-weight: bold;
+        font-size: $card-cost;
+    }
+    .best-positions
+{
+    .cards
+    {
+        .card
+        {
+            .card-title
+            {
+                @include card-title;
+                margin: 0px;
+            }
+            .card-cost
+            {
+                @include card-cost;
+                margin: 0px;
+            }
+        }
+    }
+}
+}

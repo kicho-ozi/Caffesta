@@ -1,0 +1,55 @@
+$menu-text: 0.7rem;
+.menu
+{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 7rem;
+    box-sizing: border-box;
+    color: $light;
+    z-index: 1;
+    a 
+    {
+        font-size: $menu-text;
+        margin: 0 0.4em;
+    }
+    img 
+    {
+        width: 6vw;
+    }
+}
+
+.banner
+{
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    height: 100vh;
+    background-image: url(../img/banner.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button
+    {
+        @include accent-text;
+    }
+    .banner-content
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .banner-title
+        {
+            @include main-banner-text;
+        }
+        .banner-text
+        {
+            @include accent-text;
+        }
+    }
+}

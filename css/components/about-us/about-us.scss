@@ -1,0 +1,52 @@
+$main-text: 0.9rem;
+
+.about-us
+{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+    .about-us-content 
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        position: relative;
+        padding: 0 20vw;
+    }
+      
+    .images 
+    {
+        position: relative;
+        margin-right: 5vw;
+    }
+      
+    .front-image 
+    {
+        position: relative;
+        z-index: 2;
+        width: 20vw;
+        left: 6%;
+    }
+      
+    .back-image 
+    {
+        position: absolute;
+        bottom: 6%;
+        left: 0px;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .title 
+    {
+        @include title;
+        color: $title-color;
+    }
+    .content 
+    {
+        position: relative;
+        font-size: $main-text;
+        z-index: 2;
+        margin: 0;
+    }
+}
